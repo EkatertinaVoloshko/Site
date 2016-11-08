@@ -1,0 +1,184 @@
+﻿<html>
+<head>
+    <title>Great Britain</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="m.css" />
+    <script type="text/javascript" src="n.js"></script>
+    
+    
+</head>
+<body>
+    <table width="100%" border="1">
+        <tr>
+            <td width="33%" onclick="show_text()">
+                <h1>Information about UK and map </h1>
+            </td>
+            <td width="33%" onclick="show_pic()">
+                <h1> Photos and social networks</h1>
+            </td>
+            <td width="34%" onclick="show_quiz()">
+               <h1> Quiz</h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="c1" style="display: none">
+                    <h4>
+                        The full name of the country the United Kingdom of Great Britain and Northern Ireland. The United Kingdom is situated on the British Isles. The British Isles consist of two large islands, Great Britain and Ireland, and a great number of small islands. Their total area is over 314 000 sq. km. The British Isles are separated from the European continent by the North Sea and the English Channel. The western coast of Great Britain is washed by the Atlantic Ocean and the Irish Sea. Northern Ireland occupies one third of the island of Ireland. It borders on the Irish Republic in the south. The island of Great Britain consists of three main parts: England (the southern and middle part of the island), Wales (a mountainous peninsula in the West) and Scotland (the northern part of the island).
+                        There are no high mountains in Great Britain. In the north the Cheviots separate England from Scotland, the Pennines stretch down North England along its middle, the Cambrian mountains occupy the greater part of Wales and the Highlands of Scotland are the tallest of the British mountains. There is very little flat country except in the region known as East Anglia. Most of the rivers flow into the North Sea. The Thames is. the deepest and the longest of the British rivers. Some of the British greatest ports are situated in the estuaries of the Thames, Mersey, Trent, T Clyde and Bristol Avon. Great Britain is not very rich in mineral resources, it has some deposits of coal and iron ore and vast deposits of oil and gas that were discovered in the North Sea.
+                        The warm currents of the Atlantic Ocean influence the climate of Great Britain. Winters are not severely cold and. summers are rarely hot. The population of the United Kingdom is over 58 million people. The main nationalities are: English, Welsh, Scottish and Irish. In Great Britain there are a lot of immigrants from former British Asian and African colonies. Great Britain is a highly industrialized country. New industries have been developed in the last three decades. The main industrial centres are London, Birmingham, Manchester, Leeds, Liverpool, Glasgow and Bristol. The capital of the country is London. The United Kingdom is a parliamentary monarchy.
+                    </h4>
+
+
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=WV9CI0hKjw8vpSpLdxK9Je3ctZbz5vGm&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+                </div>
+                <div id="c2">
+                    <a href="https://vk.com/club132654638"><img width="100%" src="ln.jpg"></a>
+                    
+               </div>
+
+                <div id="c3">
+                    <script type="text/javascript" language="JavaScript">
+                        var res="13422";
+
+function check_me()
+{
+    var count=0;
+    with(document.test) {
+if (!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked)
+{count+=1};
+if (!Q2[0].checked&&!Q2[1].checked&&!Q2[2].checked&&!Q2[3].checked)
+{count+=1};
+if (!Q3[0].checked&&!Q3[1].checked&&!Q3[2].checked&&!Q3[3].checked)
+{count+=1};
+if (!Q4[0].checked&&!Q4[1].checked&&!Q4[2].checked&&!Q4[3].checked)
+{count+=1};
+if (!Q5[0].checked&&!Q5[1].checked&&!Q5[2].checked&&!Q5[3].checked)
+{count+=1};
+if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")
+        else answer();
+    }
+}
+
+function control(k, f1,f2,f3,f4,f5) {
+if (k==1&&f1.checked) return true;
+if (k==2&&f2.checked) return true;
+if (k==3&&f3.checked) return true;
+if (k==4&&f4.checked) return true;
+if (k==5&&f5.checked) return true;
+return false;
+}
+
+function answer() {
+answ="";
+     with(document)    {
+    answ+=control(res.charAt(0) ,test.Q1[0],test.Q1[1],test.Q1[2],test.Q1[3])?"1":"0";
+answ+=control(res.charAt(1) ,test.Q2[0],test.Q2[1],test.Q2[2],test.Q2[3])?"1":"0";
+answ+=control(res.charAt(2) ,test.Q3[0],test.Q3[1],test.Q3[2],test.Q3[3])?"1":"0";
+answ+=control(res.charAt(3) ,test.Q4[0],test.Q4[1],test.Q4[2],test.Q4[3])?"1":"0";
+answ+=control(res.charAt(4) ,test.Q5[0],test.Q5[1],test.Q5[2],test.Q5[3])?"1":"0";
+
+showResult();
+    }
+}
+
+function showResult()   {
+    var nok=0;
+    var i,s;
+
+for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+if(nok==5) s="ОТЛИЧНО";
+if(nok<5) s="ХОРОШО";
+if(nok<3.75) s="УДОВЛЕТВОРИТЕЛЬНО";
+if (nok<2.5) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+    document.test.s1.
+    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+
+with(document.test)
+    {
+    if (answ.charAt(0)=="1") {T1.value=" + "} else {T1.value=" - "};
+   if (answ.charAt(1)=="1") {T2.value=" + "} else {T2.value=" - "};
+   if (answ.charAt(2)=="1") {T3.value=" + "} else {T3.value=" - "};
+   if (answ.charAt(3)=="1") {T4.value=" + "} else {T4.value=" - "};
+   if (answ.charAt(4)=="1") {T5.value=" + "} else {T5.value=" - "};
+     }
+}
+function showhide(obj){
+    if(obj == 'none') return 'inline';
+    else return 'none';
+}
+
+                    </script>
+                    <center><b><h3>Do you know Great Britain?</h3></b></center><br /><br />
+                    &nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+                        Инструкция
+                    </span>
+                    <br />
+                    <div id="instruction" style="display: none; width: 100%;">
+                        <ul>
+                            <li>Выберите один из вариантов в каждом из 5 вопросов;</li>
+                            <li>Нажмите на кнопку "Показать результат";</li>
+                            <li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+                            <li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+                            <li>За каждый правильный ответ начисляется 1 балл;</li>
+                            <li>Оценки: менее 2.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 2.5 но менее 3.75 - УДОВЛЕТВОРИТЕЛЬНО, 3.75 и менее 5 - ХОРОШО, 5 - ОТЛИЧНО;</li>
+                            <li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+                        </ul>
+                    </div>
+                    <form name="test">
+                        <ol>
+                            <li>
+                                <INPUT type="text" size="1" value="" name="T1" /><b> Name the sea between the island Great Britain and Ireland?</b><br />
+                                <input type="radio" value="0" name="Q1" /> Irish Sea<br />
+                                <input type="radio" value="1" name="Q1" /> Black sea<br />
+                                <input type="radio" value="2" name="Q1" /> Red Sea<br />
+                                <input type="radio" value="3" name="Q1" /> Caspian Sea<br />
+                                <br />
+                            </li>
+                            <li>
+                                <INPUT type="text" size="1" value="" name="T2" /><b> How old is London?</b><br />
+                                <input type="radio" value="0" name="Q2" /> More then 10 thousand years<br />
+                                <input type="radio" value="1" name="Q2" /> 6 thousand years<br />
+                                <input type="radio" value="2" name="Q2" /> More than 2 thousand years<br />
+                                <input type="radio" value="3" name="Q2" /> 700 years<br />
+                                <br />
+                            </li>
+                            <li>
+                                <INPUT type="text" size="1" value="" name="T3" /><b> What is the favorite flower of Englishmen? </b><br />
+                                <input type="radio" value="0" name="Q3" /> iris<br />
+                                <input type="radio" value="1" name="Q3" /> narcissus <br />
+                                <input type="radio" value="2" name="Q3" /> daisy<br />
+                                <input type="radio" value="3" name="Q3" /> rose<br />
+                                <br />
+                            </li>
+                            <li>
+                                <INPUT type="text" size="1" value="" name="T4" /><b> What language do they speak in the U.K.? </b><br />
+                                <input type="radio" value="0" name="Q4" /> French<br />
+                                <input type="radio" value="1" name="Q4" /> English<br />
+                                <input type="radio" value="2" name="Q4" /> Spanish<br />
+                                <input type="radio" value="3" name="Q4" /> Portuguese<br />
+                                <br />
+                            </li>
+                            <li>
+                                <INPUT type="text" size="1" value="" name="T5" /><b> How many people live in the Great Britain? </b><br />
+                                <input type="radio" value="0" name="Q5" /> 10 million people<br />
+                                <input type="radio" value="1" name="Q5" /> Nearly 60 million people<br />
+                                <input type="radio" value="2" name="Q5" /> 17 thousand people<br />
+                                <input type="radio" value="3" name="Q5" /> Nearly 100 million people<br />
+                                <br />
+                            </li>
+                        </ol>
+                        <CENTER>
+                            <P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+                            <INPUT onclick="check_me()" type="button" value="Показать результат" />&nbsp;&nbsp;&nbsp;&nbsp;
+                            <INPUT type="reset" value="Сбросить ответы" />
+                        </CENTER>
+                    </form>
+ 
+                        </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
